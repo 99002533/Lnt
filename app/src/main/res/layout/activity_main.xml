@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonlogin"
         android:onClick="clickHandler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,17 +52,19 @@
         android:layout_marginLeft="29dp"
         android:text="LOGIN"
         android:textColor="@color/white_font_color"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttoncancel"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
+        android:id="@+id/buttoncancel"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:onClick="clickHandler"
         android:text="cancel"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/checkBox"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonlogin"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>
