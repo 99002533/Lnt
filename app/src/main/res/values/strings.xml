@@ -2,4 +2,5 @@
     <string name="app_name">Lnt</string>
     <string name="enter_username">Enter Username</string>
     <string name="enter_pwd">Enter Password</string>
+    <string name="home_activity">Home Activity</string>
 </resources>
