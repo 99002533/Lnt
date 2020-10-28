@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder> {
     LayoutInflater mLayoutInflater; //declaration
     ArrayList<Note> noteArrayList;
-    public  NotesAdapter(Context context, ArrayList<Note>notes){
+    public  NotesAdapter(Context context, ArrayList<Note> notes){
         noteArrayList = notes;
         mLayoutInflater = LayoutInflater.from(context);
     }
@@ -29,13 +29,12 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
     }
 
     @Override //shikar --write on the planks
-    public void onBindViewHolder(@NonNull NotesViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NotesViewHolder plankGivenSachin, int position) {
         Note note = noteArrayList.get(position);
         String title = note.getTitle();
         String subTitle = note.getSubTitle();
 
 
-        NotesViewHolder plankGivenSachin = null;
         plankGivenSachin.titleTextview.setText(title);
         plankGivenSachin.subTitleTextview.setText(subTitle);
 
@@ -48,12 +47,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
 
     //box holding the planks[new/recycled] bought by sachin
     public class NotesViewHolder extends RecyclerView.ViewHolder {
-       // TextView titleTextview, subTitleTextview;
         public   TextView titleTextview, subTitleTextview;//declaration
-        public NotesViewHolder(@NonNull View itemView) {
-            super(itemView);
-            titleTextview = itemView.findViewById(R.id.textViewTitle);
-            subTitleTextview = itemView.findViewById(R.id.textViewSubtitle);
-        }
+//        public NotesViewHolder(@NonNull View itemView) {
+//            super(itemView);
+//            titleTextview = itemView.findViewById(R.id.textViewTitle);
+//            subTitleTextview = itemView.findViewById(R.id.textViewSubtitle);
+public NotesViewHolder(@NonNull View woodenPlank) {
+    super(woodenPlank);
+    titleTextview = woodenPlank.findViewById(R.id.textViewTitle);
+    subTitleTextview = woodenPlank.findViewById(R.id.textViewSubtitle);
+}
     }
 }
