@@ -1,8 +1,12 @@
 package com.example.lnt;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.example.lnt.override.NotesAdapter;
 
 import java.util.ArrayList;
 
@@ -17,7 +21,13 @@ public class RecyclerActivity extends AppCompatActivity {
         noteArrayList = new ArrayList<>(); //initialization
 
         createData();
+        NotesAdapter adapter = new NotesAdapter(this, noteArrayList);
+        RecyclerView notesRecyclerView = findViewById(R.id.notes_recyclerview);
+        notesRecyclerView.setAdapter(adapter);
+        notesRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
+
 
     private void createData() {
         noteArrayList.add(new Note("title1","subtitle1"));

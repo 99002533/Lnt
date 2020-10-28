@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="languages_listview" type="id" />
+    <item name="textViewTitle" type="id" />
+</resources>
