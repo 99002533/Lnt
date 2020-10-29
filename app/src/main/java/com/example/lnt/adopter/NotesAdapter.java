@@ -1,4 +1,4 @@
-package com.example.lnt.override;
+package com.example.lnt.adopter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.lnt.Note;
+import com.example.lnt.model.Note;
 import com.example.lnt.R;
 
 import java.util.ArrayList;

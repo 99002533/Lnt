@@ -1,4 +1,4 @@
-package com.example.lnt;
+package com.example.lnt.model;
 
 public class Note { // a box with 2 partitions
     String title;

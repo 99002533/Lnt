@@ -4,4 +4,6 @@
     <item name="textViewTitle" type="id" />
     <item name="selectall" type="id"/>
     <item name="paste" type="id"/>
+    <item name="buttoncontext" type="id" />
+    <item name="delete" type="id" />
 </resources>
